@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+@extends('layouts.main')
 
-<body>
-    <p>ini halaman riwayat
-        ahsjdhasjdhajsdhaj
-    </p>
-</body>
+@section('container')
 
-</html>
+<div>
+    <p>INI RIWAYAT</p><br>
+</div>
+
+@endsection

@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+@extends('layouts.main')
 
-<body>
-    <p>ini halaman dashboard
-        ahsjdhasjdhajsdhaj
-    </p>
-</body>
+@section('container')
 
-</html>
+<div>
+    <p>INI DASHBOARD</p><br>
+</div>
+
+@endsection
