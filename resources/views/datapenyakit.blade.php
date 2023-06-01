@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+@extends('layouts.main')
 
-<body>
-    <p>ini halaman data penyakit
-        ahsjdhasjdhajsdhaj
-    </p>
-</body>
+@section('container')
 
-</html>
+<div>
+    <p>INI DATA PENYAKIT</p><br>
+</div>
+
+@endsection
