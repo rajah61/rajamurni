@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DatapenyakitController;
+use App\Http\Controllers\DiagnosisController;
+use App\Http\Controllers\RiwayatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,21 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
-Route::get('/metode', function () {
-    return view('metode');
-});
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-Route::get('/datapenyakit', function () {
-    return view('datapenyakit');
-});
-Route::get('/diagnosis', function () {
-    return view('diagnosis');
-});
-Route::get('/riwayat', function () {
-    return view('riwayat');
-});
+Route::get('/', [DashboardController::class, 'index']);
+Route::get('/diagnosis', [DiagnosisController::class, 'index']);
+Route::get('/datapenyakit', [DatapenyakitController::class, 'index']);
+Route::get('/riwayat', [RiwayatController::class, 'index']);
