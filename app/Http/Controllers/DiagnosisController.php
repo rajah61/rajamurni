@@ -8,6 +8,8 @@ class DiagnosisController extends Controller
 {
     public function index()
     {
-        return view('diagnosis.index');
-    }//
+        return view('diagnosis.index', [
+            'title' => 'Diagnosis',
+        ]);
+    }
 }

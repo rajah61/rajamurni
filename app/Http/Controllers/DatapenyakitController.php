@@ -8,6 +8,8 @@ class DatapenyakitController extends Controller
 {
     public function index()
     {
-        return view('datapenyakit.index');
+        return view('datapenyakit.index', [
+            'title' => 'Data Penyakit',
+        ]);
     }
 }
