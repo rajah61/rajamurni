@@ -2,8 +2,8 @@
 
 @section('container')
 
-<div>
-    <p>INI DIAGNOSIS</p><br>
+<div class="center text-center">
+    <a class="btn btn-dark">DIAGNOSIS</a>
 </div>
 
 @endsection
